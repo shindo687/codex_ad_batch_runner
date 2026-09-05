@@ -1,0 +1,33 @@
+{
+  "workers": ["local"],
+  "hosts": {},
+  "work_root": "~/v4pro_work",
+  "remote_agent_dir": "PLACEHOLDER_本机上的runner目录(含remote_agent.py)",
+  "remote_python": "python3",
+  "tasks_csv": "tasks.csv",
+  "repo": {
+    "owner": "PLACEHOLDER_你的GitHub账号",
+    "suffix": "_PLACEHOLDER_唯一批号",
+    "visibility": "private",
+    "create_repo": true
+  },
+  "agents": {
+    "presets": {
+      "codex": {
+        "cmd": "codex exec -m PLACEHOLDER_你的模型 --dangerously-bypass-approvals-and-sandbox --skip-git-repo-check",
+        "style": "stdin",
+        "probe": {"expect": "OK", "timeout_seconds": 45}
+      }
+    },
+    "roles": {"coder": ["codex"], "fix": ["codex"], "review": ["codex"]}
+  },
+  "max_fix_rounds": 8,
+  "timeout_minutes": 90,
+  "policy_file": "",
+  "poll_interval_seconds": 10,
+  "max_interrupts": 10,
+  "failover_cap": 3,
+  "max_accept_retries": 6,
+  "probe_fail_budget": 60,
+  "zombie_after_secs": 1200
+}
