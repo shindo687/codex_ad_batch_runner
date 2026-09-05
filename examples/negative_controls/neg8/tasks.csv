@@ -1,0 +1,2 @@
+task_id,project,worker,task_file,timeout_minutes,max_fix_rounds,review_agent
+1,numkit,local,tasks/task_numkit_simple.md,20,2,pi-infra

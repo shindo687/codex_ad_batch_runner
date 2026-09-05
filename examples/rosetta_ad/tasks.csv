@@ -1,0 +1,2 @@
+task_id,project,worker,task_file,timeout_minutes,max_fix_rounds,seed_url,seed_ref
+1,rosetta_ad_m1,local,tasks/task_rosetta_ad_v4pro.md,90,3,PLACEHOLDER_你的种子仓库git地址,PLACEHOLDER_分支名或40位commit-SHA

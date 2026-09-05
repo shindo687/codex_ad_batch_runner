@@ -1,0 +1,4 @@
+task_id,project,worker,task_file,timeout_minutes,max_fix_rounds,seed_url,seed_ref
+1,quspin_xj1,local,tasks/task_quspin_xj1.md,90,8,PLACEHOLDER_你的种子仓库git地址,PLACEHOLDER_分支名或40位commit-SHA
+2,quspin_xj2,local,tasks/task_quspin_xj2.md,90,8,PLACEHOLDER_你的种子仓库git地址,PLACEHOLDER_分支名或40位commit-SHA
+3,quspin_xj3,local,tasks/task_quspin_xj3.md,90,8,PLACEHOLDER_你的种子仓库git地址,PLACEHOLDER_分支名或40位commit-SHA

@@ -1,0 +1,5 @@
+task_id,project,worker,task_file,timeout_minutes,max_fix_rounds,seed_url,seed_ref
+1,tenpy_xj1,local,tasks/task_tenpy_xj1.md,90,8,PLACEHOLDER_你的种子仓库git地址,PLACEHOLDER_分支名或40位commit-SHA
+2,pycalphad_xj1,local,tasks/task_pycalphad_xj1.md,90,8,PLACEHOLDER_你的种子仓库git地址,PLACEHOLDER_分支名或40位commit-SHA
+3,pycalphad_xj2,local,tasks/task_pycalphad_xj2.md,90,8,PLACEHOLDER_你的种子仓库git地址,PLACEHOLDER_分支名或40位commit-SHA
+4,pycalphad_xj_all,local,tasks/task_pycalphad_xj_all.md,150,8,PLACEHOLDER_你的种子仓库git地址,PLACEHOLDER_分支名或40位commit-SHA
