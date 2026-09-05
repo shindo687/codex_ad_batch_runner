@@ -19,9 +19,9 @@ topology/canonical structure are held fixed.
 ## Versions and scope
 
 - Upstream TeNPy source: commit [`0adfd60a81249f9e614f51a5436147c97d916f32`](https://github.com/tenpy/tenpy/tree/0adfd60a81249f9e614f51a5436147c97d916f32).
-- AD package: [`tenpy_v3_adms_xj`](https://git.gewu-lab.ai/<矩阵实验室组织>/tenpy_v3_adms_xj), reviewed commit [`76c77b78e4c367749ffc69ea87782d229a5534f6`](https://git.gewu-lab.ai/<矩阵实验室组织>/tenpy_v3_adms_xj/-/tree/76c77b78e4c367749ffc69ea87782d229a5534f6), version `0.1.0`.
-- Private benchmark ledger: [`tenpy-task-ledger.json`](https://git.gewu-lab.ai/flyingwagner/ad-software-private-benchmark/-/blob/f1892156dd4f9a118bb1707b44b320d04af5247a/tenpy/tenpy-task-ledger.json).
-- Capability review: [`TASK_CAPABILITY_REVIEW.md`](https://git.gewu-lab.ai/flyingwagner/ad-software-private-benchmark/-/blob/f1892156dd4f9a118bb1707b44b320d04af5247a/tenpy/bench/private/0.1.0/TASK_CAPABILITY_REVIEW.md).
+- AD package: [`tenpy_v3_adms_xj`](https://<内部GitLab>/<矩阵实验室组织>/tenpy_v3_adms_xj), reviewed commit [`76c77b78e4c367749ffc69ea87782d229a5534f6`](https://<内部GitLab>/<矩阵实验室组织>/tenpy_v3_adms_xj/-/tree/76c77b78e4c367749ffc69ea87782d229a5534f6), version `0.1.0`.
+- Private benchmark ledger: [`tenpy-task-ledger.json`](https://<内部GitLab>/flyingwagner/ad-software-private-benchmark/-/blob/f1892156dd4f9a118bb1707b44b320d04af5247a/tenpy/tenpy-task-ledger.json).
+- Capability review: [`TASK_CAPABILITY_REVIEW.md`](https://<内部GitLab>/flyingwagner/ad-software-private-benchmark/-/blob/f1892156dd4f9a118bb1707b44b320d04af5247a/tenpy/bench/private/0.1.0/TASK_CAPABILITY_REVIEW.md).
 
 ## Related tasks and papers
 

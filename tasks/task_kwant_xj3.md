@@ -19,7 +19,7 @@ purely because this derivative path is missing.
 ## Versions and scope
 
 - Upstream software: Kwant upstream snapshot commit [`ef12fa0d78e25bd8ab5a5e6d7587c6b0d274bea6`](https://gitlab.kwant-project.org/kwant/kwant/-/tree/ef12fa0d78e25bd8ab5a5e6d7587c6b0d274bea6).
-- AD package: [`kwant_v3_adms_xj`](https://git.gewu-lab.ai/<矩阵实验室组织>/kwant_v3_adms_xj), reviewed commit [`fd4470d049d01bc0486eaa96f7b76a570ea6915f`](https://git.gewu-lab.ai/<矩阵实验室组织>/kwant_v3_adms_xj/-/commit/fd4470d049d01bc0486eaa96f7b76a570ea6915f).
+- AD package: [`kwant_v3_adms_xj`](https://<内部GitLab>/<矩阵实验室组织>/kwant_v3_adms_xj), reviewed commit [`fd4470d049d01bc0486eaa96f7b76a570ea6915f`](https://<内部GitLab>/<矩阵实验室组织>/kwant_v3_adms_xj/-/commit/fd4470d049d01bc0486eaa96f7b76a570ea6915f).
 - Capability review: `package-reviews/kwant/bench/public/0.1.0-fd4470d0/TASK_CAPABILITY_REVIEW.md` (public benchmark `c4e583b`, 24 tasks).
 
 ## Related tasks and papers

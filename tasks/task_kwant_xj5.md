@@ -10,13 +10,13 @@
 
 ## Review context and provenance
 
-- AD package: [kwant-ad 0.1.0, commit fd4470d049d01bc0486eaa96f7b76a570ea6915f](https://git.gewu-lab.ai/<矩阵实验室组织>/kwant_v3_adms_xj/-/tree/fd4470d049d01bc0486eaa96f7b76a570ea6915f).
-- Upstream: Kwant source commit `ef12fa0d78e25bd8ab5a5e6d7587c6b0d274bea6`, as recorded in [requirements.md](https://git.gewu-lab.ai/<矩阵实验室组织>/kwant_v3_adms_xj/-/blob/fd4470d049d01bc0486eaa96f7b76a570ea6915f/kwant_ad/requirements.md); the probes used the package's unmodified [bundled source](https://git.gewu-lab.ai/<矩阵实验室组织>/kwant_v3_adms_xj/-/blob/fd4470d049d01bc0486eaa96f7b76a570ea6915f/upstream/README.rst).
+- AD package: [kwant-ad 0.1.0, commit fd4470d049d01bc0486eaa96f7b76a570ea6915f](https://<内部GitLab>/<矩阵实验室组织>/kwant_v3_adms_xj/-/tree/fd4470d049d01bc0486eaa96f7b76a570ea6915f).
+- Upstream: Kwant source commit `ef12fa0d78e25bd8ab5a5e6d7587c6b0d274bea6`, as recorded in [requirements.md](https://<内部GitLab>/<矩阵实验室组织>/kwant_v3_adms_xj/-/blob/fd4470d049d01bc0486eaa96f7b76a570ea6915f/kwant_ad/requirements.md); the probes used the package's unmodified [bundled source](https://<内部GitLab>/<矩阵实验室组织>/kwant_v3_adms_xj/-/blob/fd4470d049d01bc0486eaa96f7b76a570ea6915f/upstream/README.rst).
 - Environment: Python 3.12.14, NumPy 2.5.2, SciPy 1.18.1, tinyarray 1.2.5, ChainRules 0.1.0; SciPy transport backend, MUMPS unavailable.
 - Kwant was built from that exact bundled snapshot. Its build label `0.0.0+ef12fa0` is not a published release claim. Build dependencies, including SciPy, were supplied explicitly and the build used `--no-build-isolation`.
 - Baseline sidecar suite: **18 passed, 1 warning in 12.00s**, exit 0. The warning is the unavailable optional MUMPS backend.
 - **Scope:** package-level capability review requested for immediate issue submission. A public/private benchmark was not selected, so no benchmark coverage score, benchmark task IDs, or full-paper reproduction is claimed. This is a documented deferred capability, not a claim that a currently implemented rule regressed.
-- This issue contains its bounded review evidence below. [Review context](#review-context-and-provenance) · [Astra issue index](https://git.gewu-lab.ai/<矩阵实验室组织>/kwant_v3_adms_xj/-/issues?scope=all&state=all&search=Astra).
+- This issue contains its bounded review evidence below. [Review context](#review-context-and-provenance) · [Astra issue index](https://<内部GitLab>/<矩阵实验室组织>/kwant_v3_adms_xj/-/issues?scope=all&state=all&search=Astra).
 
 ## Summary
 
@@ -26,11 +26,11 @@ The sidecar differentiates jackson_kernel, lorentz_kernel and fermi_distribution
 
 ### Upstream operation
 
-[SpectralDensity](https://git.gewu-lab.ai/<矩阵实验室组织>/kwant_v3_adms_xj/-/blob/fd4470d049d01bc0486eaa96f7b76a570ea6915f/upstream/src/kwant/kpm.py#L39) accepts matrix Hamiltonians, explicit `bounds`, `num_moments`, and `vector_factory`; its call evaluates the reconstructed spectral density. The fixture fixes all these choices.
+[SpectralDensity](https://<内部GitLab>/<矩阵实验室组织>/kwant_v3_adms_xj/-/blob/fd4470d049d01bc0486eaa96f7b76a570ea6915f/upstream/src/kwant/kpm.py#L39) accepts matrix Hamiltonians, explicit `bounds`, `num_moments`, and `vector_factory`; its call evaluates the reconstructed spectral density. The fixture fixes all these choices.
 
 ### AD-package boundary
 
-[SPEC.md](https://git.gewu-lab.ai/<矩阵实验室组织>/kwant_v3_adms_xj/-/blob/fd4470d049d01bc0486eaa96f7b76a570ea6915f/kwant_ad/SPEC.md) explicitly defers SpectralDensity/Correlator/conductivity. [_register_kpm](https://git.gewu-lab.ai/<矩阵实验室组织>/kwant_v3_adms_xj/-/blob/fd4470d049d01bc0486eaa96f7b76a570ea6915f/kwant_ad/_rules.py#L66) supplies only elementwise kernel/occupation rules; [register_rules](https://git.gewu-lab.ai/<矩阵实验室组织>/kwant_v3_adms_xj/-/blob/fd4470d049d01bc0486eaa96f7b76a570ea6915f/kwant_ad/_rules.py#L329) does not compose Hamiltonian derivatives through SpectralDensity.
+[SPEC.md](https://<内部GitLab>/<矩阵实验室组织>/kwant_v3_adms_xj/-/blob/fd4470d049d01bc0486eaa96f7b76a570ea6915f/kwant_ad/SPEC.md) explicitly defers SpectralDensity/Correlator/conductivity. [_register_kpm](https://<内部GitLab>/<矩阵实验室组织>/kwant_v3_adms_xj/-/blob/fd4470d049d01bc0486eaa96f7b76a570ea6915f/kwant_ad/_rules.py#L66) supplies only elementwise kernel/occupation rules; [register_rules](https://<内部GitLab>/<矩阵实验室组织>/kwant_v3_adms_xj/-/blob/fd4470d049d01bc0486eaa96f7b76a570ea6915f/kwant_ad/_rules.py#L329) does not compose Hamiltonian derivatives through SpectralDensity.
 
 ### Minimal bounded reproduction
 
