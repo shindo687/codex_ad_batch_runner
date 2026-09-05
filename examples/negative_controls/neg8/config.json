@@ -1,0 +1,40 @@
+{
+  "workers": ["local"],
+  "work_root": "~/ad_xjtan_v4pro_negtest",
+  "remote_agent_dir": "~/codex_v4pro_dev_neg",
+  "remote_python": "python3",
+  "tasks_csv": "tasks/neg8/tasks.csv",
+  "repo": {
+    "owner": "shindo687",
+    "suffix": "_dsv4pro_v3n8",
+    "visibility": "private",
+    "create_repo": true
+  },
+  "agents": {
+    "presets": {
+      "codex-lite": {
+        "cmd": "python3 test_fake_codex.py",
+        "style": "stdin",
+        "probe": {"enabled": false}
+      },
+      "pi-infra": {
+        "cmd": "FAKE_PI_MODE=infra python3 test_fake_pi.py",
+        "style": "atfile",
+        "probe": {"enabled": false}
+      }
+    },
+    "roles": {
+      "coder": ["codex-lite"],
+      "fix": ["codex-lite"],
+      "review": ["pi-infra"]
+    }
+  },
+  "max_fix_rounds": 2,
+  "timeout_minutes": 20,
+  "policy_file": "",
+  "poll_interval_seconds": 5,
+  "max_interrupts": 4,
+  "failover_cap": 2,
+  "probe_fail_budget": 30,
+  "zombie_after_secs": 1200
+}
