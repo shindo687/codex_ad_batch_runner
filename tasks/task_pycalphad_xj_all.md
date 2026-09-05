@@ -32,7 +32,7 @@ selection or the equilibrium active set.
 
 - Upstream pycalphad snapshot: `02c1ce1f16460b695d1a75a3e8d501edb295e7a6` (immutable `upstream/` snapshot in the package).
 - AD package: [`pycalphad_v3_adms_xj`](https://<内部GitLab>/<矩阵实验室组织>/pycalphad_v3_adms_xj), commit [`85554b44ce0e0bb821f4e19a63b3c0c4be953386`](https://<内部GitLab>/<矩阵实验室组织>/pycalphad_v3_adms_xj/-/tree/85554b44ce0e0bb821f4e19a63b3c0c4be953386), version `0.1.0`.
-- Private bench ledger: [`pycalphad-task-ledger.json`](https://<内部GitLab>/flyingwagner/ad-software-private-benchmark/-/blob/f1892156dd4f9a118bb1707b44b320d04af5247a/pycalphad/pycalphad-task-ledger.json).
+- Private bench ledger: [`pycalphad-task-ledger.json`](https://<内部GitLab>/<作者>/ad-software-private-benchmark/-/blob/f1892156dd4f9a118bb1707b44b320d04af5247a/pycalphad/pycalphad-task-ledger.json).
 - Capability review: [`TASK_CAPABILITY_REVIEW.md`](TASK_CAPABILITY_REVIEW.md).
 
 ## Related tasks and papers
@@ -123,7 +123,7 @@ the existing workflows, not a new thermodynamic solver.
 - Upstream software: pycalphad, commit `02c1ce1f16460b695d1a75a3e8d501edb295e7a6`
 - AD package: [pycalphad_v3_adms_xj](https://<内部GitLab>/<矩阵实验室组织>/pycalphad_v3_adms_xj), commit `85554b44ce0e0bb821f4e19a63b3c0c4be953386` (v0.1.0)
 - Capability review: [pycalphad v0.1.0 private review](../0.1.0-85554b4/TASK_CAPABILITY_REVIEW.md)
-- Benchmark ledger: [private pycalphad task ledger](https://<内部GitLab>/flyingwagner/ad-software-private-benchmark/-/blob/main/pycalphad/pycalphad-task-ledger.json)
+- Benchmark ledger: [private pycalphad task ledger](https://<内部GitLab>/<作者>/ad-software-private-benchmark/-/blob/main/pycalphad/pycalphad-task-ledger.json)
 
 ## Related tasks and papers
 
@@ -133,7 +133,7 @@ they are consolidated here because they share one implementation contract.
 
 | Task | What it needs | Paper |
 |---|---|---|
-| [`pycalphad.t028`](https://<内部GitLab>/flyingwagner/ad-software-private-benchmark/-/blob/main/pycalphad/pycalphad-task-ledger.json) | Grand-potential derivative from equilibrium/property query | [Non-equilibrium Thermodynamic Foundation of the Grand-potential Phase Field Model](https://doi.org/10.48550/arxiv.2409.18864) |
+| [`pycalphad.t028`](https://<内部GitLab>/<作者>/ad-software-private-benchmark/-/blob/main/pycalphad/pycalphad-task-ledger.json) | Grand-potential derivative from equilibrium/property query | [Non-equilibrium Thermodynamic Foundation of the Grand-potential Phase Field Model](https://doi.org/10.48550/arxiv.2409.18864) |
 | `pycalphad.t029` | Multiphase chemical-potential gradient | [Grand-potential-based phase-field model for multiple phases](https://doi.org/10.1103/PhysRevE.98.023309) |
 | `pycalphad.t030` | Gibbs-energy/database parameter derivative | [Coupled microstructural-compositional evolution](https://doi.org/10.1557/opl.2013.165) |
 | `pycalphad.t031` | Redlich-Kister parameter sensitivity of a phase diagram | [Optimised equilibrium phase diagram of arsenic-lead alloys](https://doi.org/10.1016/0040-6031(93)80375-k) |

@@ -21,7 +21,7 @@ selection or the equilibrium active set.
 
 - Upstream pycalphad snapshot: `02c1ce1f16460b695d1a75a3e8d501edb295e7a6` (immutable `upstream/` snapshot in the package).
 - AD package: [`pycalphad_v3_adms_xj`](https://<内部GitLab>/<矩阵实验室组织>/pycalphad_v3_adms_xj), commit [`85554b44ce0e0bb821f4e19a63b3c0c4be953386`](https://<内部GitLab>/<矩阵实验室组织>/pycalphad_v3_adms_xj/-/tree/85554b44ce0e0bb821f4e19a63b3c0c4be953386), version `0.1.0`.
-- Private bench ledger: [`pycalphad-task-ledger.json`](https://<内部GitLab>/flyingwagner/ad-software-private-benchmark/-/blob/f1892156dd4f9a118bb1707b44b320d04af5247a/pycalphad/pycalphad-task-ledger.json).
+- Private bench ledger: [`pycalphad-task-ledger.json`](https://<内部GitLab>/<作者>/ad-software-private-benchmark/-/blob/f1892156dd4f9a118bb1707b44b320d04af5247a/pycalphad/pycalphad-task-ledger.json).
 - Capability review: [`TASK_CAPABILITY_REVIEW.md`](TASK_CAPABILITY_REVIEW.md).
 
 ## Related tasks and papers
